@@ -98,7 +98,6 @@ cutting area which will ensure cutting of crop which comes in between them.<br>
 • The harvester can be detached and can be mounted on bot when required.
 
 # Electronics aspect of the bot
-
 ## Sensors Used
 ### 1. ULTRASONIC SENSOR: 
 8 such sensors are used.<br>
@@ -211,8 +210,10 @@ will detect that the front wheels have touched the ground. The front colour sens
 • The bot also has an ability to lift itself above the crop for traversing in the field.<br>
 
 ## Cost Structure
-  |Component       |Number used  |Cost INR|
-  | Planetary Geared Motor    |     4     |   19,996|
+
+ |Component       | Number used  | Cost INR|
+ |---|----|---|
+ | Planetary Geared Motor    |     4     |   19,996|
   |Arduino Mega 2560     |         1     |    800|
   |Node MCU Esp8266    |           1    |        260|
   |Motor Driver       |            6        |  15,000|
@@ -229,7 +230,7 @@ will detect that the front wheels have touched the ground. The front colour sens
   |Lead screw            |         3       |    2397|
   |Material for Body    |          ----   |        4000|
   |Manufacturing            |      ----  |         3500|
-|**Total Cost- **   ||     |   **60,216**|
+|**Total Cost- **   |     |   **60,216**|
 
 
 ## Future Improvement
