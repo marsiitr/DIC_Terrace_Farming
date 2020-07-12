@@ -1,36 +1,4 @@
 
-Skip to content
-Pull requests
-Issues
-Marketplace
-Explore
-@annushree21
-annushree21 /
-DIC_Terrace_Farming
-forked from marsiitr/DIC_Terrace_Farming
-
-0
-0
-
-    2
-
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-
-    Settings
-
-DIC_Terrace_Farming/final_bot.ino
-@annushree21
-annushree21 Create final_bot.ino
-Latest commit 1b56ccd 20 hours ago
-History
-1 contributor
-912 lines (766 sloc) 18.6 KB
 long Time, Time1 = 0;
 bool auto_mode=0;
 bool manual_mode=1;
