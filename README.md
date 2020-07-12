@@ -132,6 +132,17 @@ After the data is stored in the database in a sorted manner, we will need to ren
 page which will display the data to the user. 
 <br><br>
 
+### Steps and Sequence of execution
+1) Firstly, ensure proper connection of sensors with the Esp8266.
+2) Go to the folder named "IoT codes" present inside the "src" folder.
+3) Navigate inside to the "Esp8266 code" folder and Upload the file named integrated.ino in the Esp266.
+4) Upon running the code in Esp8266, it will generate an URL which needs to copied and pasted in the file named "PYTHON_READER.py"  (generally the url remains same if the wifi connection of the Esp is not changed).
+5) Run the file named PYTHON_READER.py in the ubuntu terminal. (Upon execution, the data from sensors transmitted by Esp8266 will be read and written as a local text file)
+6) Finally run the main.py in the ubuntu terminal. It will generate an URL.
+7) Copy paste the URL in the browser to get to the web page.
+
+Note: The arrangement of the files inside the folder should be same as shown in the folder "IoT codes".
+
 
 ## Traversing
 <p> • Traversing occurs with the help of ultrasonic sensors. Which is used to maintain a constant distance
