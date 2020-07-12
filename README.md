@@ -2,7 +2,7 @@
 Inter IIT Tech Meet 2019
 
 # Images
-![Final Bot](Images and Videos/Images/4.JPG)
+<img src= "Images and Videos/Images/4.JPG">
 
 
 # Abstract
@@ -117,7 +117,7 @@ The PID is used to correct the error of the bot while traversing.
 
 The correction value is given as<br>
 **Correction = kp(error) + kd(error- previous_error)**
-## Working of the IOT (Web Page)
+## Working of the IoT (Web Page)
 The readings from the different types of sensors (moisture, humidity, temperature etc) will be taken
 by a microcontroller and transferred wirelessly to a database. The readings will be stored in the database
 using file handling. The files with the reading will be sorted according to the nodes present on field.<br>
@@ -131,6 +131,20 @@ data from the esp8266 and store it in a database using file handling. The micro-
 After the data is stored in the database in a sorted manner, we will need to render the files to the web
 page which will display the data to the user. 
 <br><br>
+
+### Steps and Sequence of execution :-
+1) Firstly, ensure proper connection of sensors with the Esp8266.
+2) Go to the folder named **IoT codes** present inside the **src** folder.
+3) Navigate inside to the **Esp8266 code** folder and Upload the file named **integrated.ino** in the Esp266.
+4) Upon running the code in Esp8266, it will generate an URL which needs to copied and pasted in the file named **PYTHON_READER.py**(generally the url remains same if the wifi connection of the Esp is not changed).
+5) Run the file named **PYTHON_READER.py** in the ubuntu terminal. (Upon execution, the data from sensors transmitted by Esp8266 will be read and written as a local text file)
+6) Finally run the **main.py** in the ubuntu terminal. It will generate an URL.
+7) Copy paste the URL in the browser to get to the web page.
+
+Note: The arrangement of the files inside the folder should be same as shown in the folder "IoT codes".<br><br>
+
+### Web-Page
+<img src="Images and Videos/Images/web_page.jpg">
 
 
 ## Traversing
