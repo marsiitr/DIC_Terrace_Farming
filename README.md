@@ -132,7 +132,7 @@ After the data is stored in the database in a sorted manner, we will need to ren
 page which will display the data to the user. 
 <br><br>
 
-### Steps and Sequence of execution
+### Steps and Sequence of execution :-
 1) Firstly, ensure proper connection of sensors with the Esp8266.
 2) Go to the folder named "IoT codes" present inside the "src" folder.
 3) Navigate inside to the "Esp8266 code" folder and Upload the file named integrated.ino in the Esp266.
@@ -141,7 +141,10 @@ page which will display the data to the user.
 6) Finally run the main.py in the ubuntu terminal. It will generate an URL.
 7) Copy paste the URL in the browser to get to the web page.
 
-Note: The arrangement of the files inside the folder should be same as shown in the folder "IoT codes".
+Note: The arrangement of the files inside the folder should be same as shown in the folder "IoT codes".<br><br>
+
+### Web-Page
+<img src="Images and Videos/Images/web_page.jpg">
 
 
 ## Traversing
