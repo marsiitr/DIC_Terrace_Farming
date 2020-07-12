@@ -2,7 +2,7 @@
 Inter IIT Tech Meet 2019
 
 # Images
-![Final Bot](Images and Videos/Images/4.JPG)
+<img src= "Images and Videos/Images/4.JPG">
 
 
 # Abstract
