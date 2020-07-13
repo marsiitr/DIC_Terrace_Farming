@@ -1,15 +1,13 @@
 # DIC_Terrace_Farming
-## Inter IIT Tech Meet 2019
+ Inter IIT Tech Meet 2019
 
 <p align="center">
   <img src="https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Team%20Photo.jpg">
   Team MaRS @Inter IIT Technical Meet 8.0
 </p>
 
-### Abstract:
-MaRS IIT Roorkee has developed an autonomous bot to perform agricultural tasks for terrace farming. This
-bot can perform functionalities like seeding, watering, ploughing and harvesting of the crops. It is itself
-unique in a way that the bot can climb up and down the manmade steps in the terrace farming.
+## Abstract:
+<p align="justify">MaRS IIT Roorkee has developed an autonomous bot to perform agricultural tasks for terrace farming. This bot can perform functionalities like seeding, watering, ploughing and harvesting of the crops. It is itself unique in a way that the bot can climb up and down the manmade steps in the terrace farming.</p>
 
 ![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Final%20Bot%20View%201.jpg "Terrace Farming Robot")
 
@@ -85,14 +83,8 @@ cutting area which will ensure cutting of crop which comes in between them.<br>
 Hall sensor is used to measure the distance travelled by the bot. Encoder cannot be used on the ground wheels as the wheel can slip on the ground which will result in wrong measurements.
 
 ### Micro-Controller:
-The microcontroller of the bot is the brain of the bot. Each and every function and maneuverer of the bot is
-controlled by a microcontroller. It also helps the bot take decisions and decides the further course of
-action. We have used Arduino Mega microcontroller board which depends on AT Mega microcontroller.
-It includes digital input/output pins-54, where 16 pins are analogue inputs, 14 are used like PWM outputs hardware
-serial ports **(UARTs)** – 4, a crystal oscillator-16 MHz, an ICSP header, a power jack, a USB connection, as well as
-a RST button. This board mainly includes everything which is essential for supporting the microcontroller. So, the
-power supply of this board can be done by connecting it to a PC using a USB cable, or battery or an AC-DC adapter.
-This board can be protected from the unexpected electrical discharge by placing a base plate.
+<p align="justify">The microcontroller of the bot is the brain of the bot. Each and every function and maneuverer of the bot is controlled by a microcontroller. It also helps the bot take decisions and decides the further course of action. We have used Arduino Mega microcontroller board which depends on AT Mega microcontroller.
+It includes digital input/output pins-54, where 16 pins are analogue inputs, 14 are used like PWM outputs hardware serial ports <b>(UARTs)</b> – 4, a crystal oscillator-16 MHz, an ICSP header, a power jack, a USB connection, as well as a RST button. This board mainly includes everything which is essential for supporting the microcontroller. So, the power supply of this board can be done by connecting it to a PC using a USB cable, or battery or an AC-DC adapter. This board can be protected from the unexpected electrical discharge by placing a base plate.</p>
 
 ![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Micro%20Controller.PNG "Sample Micro-Controller Image")
 
@@ -130,19 +122,18 @@ The correction value is given as<br>
 
 
 ## Working of the IoT (Web Page)
-The readings from the different types of sensors (moisture, humidity, temperature etc) will be taken
+<p align="justify">The readings from the different types of sensors (moisture, humidity, temperature etc) will be taken
 by a microcontroller and transferred wirelessly to a database. The readings will be stored in the database
 using file handling. The files with the reading will be sorted according to the nodes present on field.<br>
-All the sensors are connected to the **Arduino AT Mega microcontroller**, which will be responsible for
+All the sensors are connected to the <b>Arduino AT Mega microcontroller</b>, which will be responsible for
 registering the input data from the sensors. Since Arduino AT-Mega does not have a in-built Wi-Fi or
-Bluetooth system, so a **ESP-8266 NODE-MCU** can be used to transfer the data wirelessly to the database.
+Bluetooth system, so a <b>ESP-8266 NODE-MCU</b> can be used to transfer the data wirelessly to the database.
 The transfer of data from Arduino to the esp8266 can take place through interrupt pins, then the esp8266
 will create a local server, another python script will run on a device having the database which will read the
 data from the esp8266 and store it in a database using file handling. The micro-header named
-**ESP_MICRO.h** is a very important header file needed for the esp8266 to transfer the data.<br>
+<b>ESP_MICRO.h</b> is a very important header file needed for the esp8266 to transfer the data.<br>
 After the data is stored in the database in a sorted manner, we will need to render the files to the web
-page which will display the data to the user. 
-<br><br>
+page which will display the data to the user.</p> 
 
 ### Steps and Sequence of execution:
 * Firstly, ensure proper connection of sensors with the Esp8266.
@@ -179,7 +170,7 @@ page which will display the data to the user.
   |Lead screw            |         3       |    2397|
   |Material for Body    |          ----   |        4000|
   |Manufacturing            |      ----  |         3500|
-|**Total Cost- **   |     |   **60,216**|
+|<b>Total Cost- </b>   |     |   **60,216**|
 
 
 ## Future Improvement
@@ -189,6 +180,7 @@ the farmers because weeds reduce the yield and
 quality of crops by competing for nutrients,
 water and sunlight. Weeds intensify the pest and
 disease problem by serving as alternate host.<br>
+
 They also reduce the efficiency of harvesting
 and hence resulting in land value reduction.
 
@@ -206,27 +198,25 @@ Training of the model is done based on 3 scenarios:<br>
 The trained module is expected to achieve a success percentage of 59-95% to detect the weed.
 
 ### • Solar Powered:
-We are also planning to use the solar power supply to meet all the power demands, so that this bot
+<p align="justify">We are also planning to use the solar power supply to meet all the power demands, so that this bot
 becomes accessible to even those regions of the country where electric supply is scarce. This Agritech
-bot operates on 12V Li-ion battery which can be charged using solar power.
-
-
+bot operates on 12V Li-ion battery which can be charged using solar power.</p>
 
 #### Team Members
-[Annushree](https://github.com/annushree21)<br>
-[Avdesh Kumar Ranwa](https://www.linkedin.com/in/avdesh-kumar-ranwa-a43610187/)<br>
-[Debaditya Barman](https://github.com/ItZ-Debaditya)<br>
-[Dhruv Shehgal]( https://github.com/Dhruv1064)<br>
-[Naveen Chandra Rai](https://github.com/ncr38)<br>
-[Ruchika Guntewar](https://github.com/RuchikaGuntewar)<br>
-[Shashi Muchkund](https://github.com/smuchkund)<br>
-[Shubham Goyal](https://github.com/shubham491981)<br>
-[Tabish Madni](https://github.com/Tmadni)<br>
-[Visvash Attri](https://github.com/visvash)<br>
+1. [Annushree](https://github.com/annushree21)<br>
+2. [Avdesh Kumar Ranwa](https://www.linkedin.com/in/avdesh-kumar-ranwa-a43610187/)<br>
+3. [Debaditya Barman](https://github.com/ItZ-Debaditya)<br>
+4. [Dhruv Shehgal]( https://github.com/Dhruv1064)<br>
+5. [Naveen Chandra Rai](https://github.com/ncr38)<br>
+6. [Ruchika Guntewar](https://github.com/RuchikaGuntewar)<br>
+7. [Shashi Muchkund](https://github.com/smuchkund)<br>
+8. [Shubham Goyal](https://github.com/shubham491981)<br>
+9. [Tabish Madni](https://github.com/Tmadni)<br>
+10. [Visvash Attri](https://github.com/visvash)<br>
 
 #### Mentors
-[Anant Shandalya](github.com/Anant-Shandilya)<br>
-[Shubhanshu Aggrawal](https://github.com/Shubhanshu07)
+1. [Anant Shandalya](https://www.github.com/Anant-Shandilya)<br>
+2. [Shubhanshu Agarwal](https://github.com/Shubhanshu07)
 
 <p align="center">
   <img src="https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Champions.jpg">
