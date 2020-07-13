@@ -24,7 +24,7 @@ To view more images, click [here.](https://github.com/visvash/DIC_Terrace_Farmin
 * The bot uses 4-wheel differential drive to traverse on the soil surface. Two central idler wheels are provided for extra stability while climbing the steps and traversing on uneven surfaces.
 * For this drive we are using Mega Torque Planetary DC geared motor of 300RPM and torque capacity of 92kg-cm, enough to carry out tasks like Ploughing and Seeding. The chassis of bot is made up of square steel pipes, arc welded together for rigidity.
 
-## Climbing
+### Climbing
 * We divided bot into 3-wheel assemblies in which front and back are containing 2 wheels, 2 motors and a lead screw but the middle assembly contains 4 caster wheels and a lead screw so that the bot does not topple, while one of the front or back wheel assemblies is in the air.
 * In the first step, the whole body will be lifted by actuating the lead screws of middle and rear wheel assemblies. Then the bot will move forward until the front wheels rest above the step.
 * In the second step, the Middle Caster Wheels will be pulled back up and the bot will move forward by actuating the back wheels to rest on the stair on front and middle wheels.
@@ -33,7 +33,7 @@ To view more images, click [here.](https://github.com/visvash/DIC_Terrace_Farmin
 
 ![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Downstair%20Motion%20Process.jpeg "Climbing Process")
 
-## Ploughing
+### Ploughing
 * The thickness of Topsoil for cultivation in terraces is less in comparison to that of plains and we can encounter stones while deep ploughing.
 * Using a Disc Harrow mechanism for shallow ploughing would be more appropriate and will save the Tool from wear and tear. Simultaneously it will use less Power per unit area.
 * A special concave disk having an angle of curvature of around 15-25 degrees has been used. This angle determines the ploughing depth. More the angle more is the depth of plough and more is the power to drive the operation.
@@ -41,16 +41,18 @@ To view more images, click [here.](https://github.com/visvash/DIC_Terrace_Farmin
 
 ![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Mechanical%20Design/Images/PLOUGH/Plough%20Prototype.PNG "Plough")
 
-## Watering
+### Watering
 * The bot will have a solenoid-valve for electronically controlling the water given to the crops. 
 * The concept of the watering mechanism is designed so as to minimize the water consumption along with maintaining the net yield.
 
-## Seeding
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Mechanical%20Design/Images/WATERING/Watering%20Mechanism%20Labelled%20Design.png "Watering Mechanism Design")
+
+### Seeding
 * For dropping the seeds, a seed tank is attached on the bot that directs the seeds to the outlet pipes using 3D printed discs controlled by Johnson type DC motor. The tank contains 3 circular disc-like structures with grooves in them. These discs are rotated by the motor.
 * The tank is divided into two-compartments, one compartment contains the seed and the other compartment contains the outlet. When the motor rotates the disc, the seeds are trapped in the grooves and are transferred to the next compartment. The seeds then fall to the ground through the outlet.
 * Cultivator is mounted at the bottom along with outlet pipes at their back so they easily drop off seeds in the tillage so formed.
 
-## Harvesting
+### Harvesting
 • Harvester consists of 2 cutting blade, operated by a geared DC motor using Spur Gears.<br>
 • Both the blades will rotate with the same speed but in opposite direction, the blades share a common
 cutting area which will ensure cutting of crop which comes in between them.<br>
@@ -59,32 +61,25 @@ cutting area which will ensure cutting of crop which comes in between them.<br>
 ![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Mechanical%20Design/Images/HARVESTOR/Harvester%201.jpg "Harvester")
 
 
-# Electronics aspect of the bot
-## Sensors Used
-### 1. ULTRASONIC SENSOR: 
+## Electronic Aspects of the Bot
+### Sensors Used
+#### ULTRASONIC SENSOR: 
 8 such sensors are used.<br>
 
-### 2. SOIL MOISTURE SENSOR:
-1 moisture sensor is used to
-take data inputs from the cultivated land.
-### 3. TEMPERATURE SENSOR: 
-1 temperature sensor is used
-to get the temperature data from the field.
-### 4. ROTARY ENCODER: 
-3 rotary encoders is used to keep
-track of the lead screws during their operation. The DC
-motors used for the traversing of the bot has inbuilt encoders.
-### 5. MPU 9250: 
-1 such sensor is used. It contains gyroscope, accelerometer and magnetometer. It is used
-to maintain the orientation of the bot.
-### 6. BUMP SENSOR: 
+#### SOIL MOISTURE SENSOR:
+1 moisture sensor is used to take data inputs from the cultivated land.
+#### TEMPERATURE SENSOR: 
+1 temperature sensor is used to get the temperature data from the field.
+#### ROTARY ENCODER: 
+3 rotary encoders is used to keep track of the lead screws during their operation. The DC motors used for the traversing of the bot has inbuilt encoders.
+#### MPU 9250: 
+1 such sensor is used. It contains gyroscope, accelerometer and magnetometer. It is used to maintain the orientation of the bot.
+#### BUMP SENSOR: 
 4 bump sensors are used to determine the state of the bot in certain manoeuvres.
-### 7. HALL SENSOR: 
-Hall sensor is used to measure the distance travelled by the bot. Encoder cannot
-be used on the ground wheels as the wheel can slip on the ground which will result in wrong
-measurements.
+#### HALL SENSOR: 
+Hall sensor is used to measure the distance travelled by the bot. Encoder cannot be used on the ground wheels as the wheel can slip on the ground which will result in wrong measurements.
 
-## Micro-Controller
+### Micro-Controller
 The microcontroller of the bot is the brain of the bot. Each and every function and maneuverer of the bot is
 controlled by a microcontroller. It also helps the bot take decisions and decides the further course of
 action. We have used Arduino Mega microcontroller board which depends on AT Mega microcontroller.
@@ -93,6 +88,9 @@ serial ports **(UARTs)** – 4, a crystal oscillator-16 MHz, an ICSP header, a p
 a RST button. This board mainly includes everything which is essential for supporting the microcontroller. So, the
 power supply of this board can be done by connecting it to a PC using a USB cable, or battery or an AC-DC adapter.
 This board can be protected from the unexpected electrical discharge by placing a base plate.
+
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Micro%20Controller.PNG "Sample Micro-Controller Image")
+
 
 ## Motor Driver
 We have used the Cytron MDD10A which is a dual-channel version of the MDD10C. Like MD10C, MDD10A
