@@ -211,7 +211,7 @@ bot operates on 12V Li-ion battery which can be charged using solar power.
 
 ## Team Members
 [Annushree](https://github.com/annushree21)<br>
-[Avdesh Kumar Ranwa]()<br>
+[Avdesh Kumar Ranwa](https://www.linkedin.com/in/avdesh-kumar-ranwa-a43610187/)<br>
 [Debaditya Barman](https://github.com/ItZ-Debaditya)<br>
 [Dhruv Shehgal]( https://github.com/Dhruv1064)<br>
 [Naveen Chandra Rai](https://github.com/ncr38)<br>
@@ -225,4 +225,8 @@ bot operates on 12V Li-ion battery which can be charged using solar power.
 [Anant Shandalya](github.com/Anant-Shandilya)<br>
 [Shubhanshu Aggrawal](https://github.com/Shubhanshu07)
 
+<p align="center">
+  <img src="https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Champions.jpg">
+  Inter IIT Tech-Meet Champions
+</p>
 
