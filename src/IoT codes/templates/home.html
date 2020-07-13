@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.split{
+   height : 100%;
+   width : 60%;
+   position :fixed;
+   z-index : 1;
+   top : 0;
+   overflow-x : hidden ;
+   padding-top : 50px;
+   padding-left : 20px;
+   padding-right : 20px;
+   
+   }
+   
+.left{
+   left :0;
+   background-color : MistyRose;
+   }
+   
+.right{
+   right : 0;
+   background-color : MistyRose;
+   }
+
+/* Create four equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 200px;/* Should be removed. Only for demonstration */
+  /*cursor: pointer;*/
+
+}
+
+.column3 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 200px;/* Should be removed. Only for demonstration */
+  /*cursor : pointer;*/
+}
+
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 200px;/* Should be removed. Only for demonstration */
+  /*cursor: pointer;*/
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.data_box{
+   height : 50%;
+   width :60%;
+   margin-top:100px;
+   border:5px solid black;
+   text-align: center;
+   }
+   
+.header {
+  background-color: Red;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+
+.body{
+  height: 100vh;
+  width:100%;
+  background-image: liner-gradient (red 50%, green 50%);
+  }
+  
+
+
+ 
+</style>
+</head>
+<body>
+
+  
+
+<div class ="split left ">
+<h2>       Agri-Tech Bot </h2>
+   <div class="centered">
+   <div class="data_box">
+  <div class="data_table w3-panel w3-border-bottom w3-border-black" >
+    Data
+  </div><hr/>
+  <div class="data_text">
+    <p id="moisture">Moisture Sensor: {{ bot1 }} {{ bot2 }}  {{ bot3 }} {{ bot4 }} {{ bot5 }} {{ bot6 }} {{ bot7 }} {{ bot8 }} {{ bot9 }} % </p>
+    <p id="temp"> Temperture Sensor: </p>
+  </div>
+   </div>
+</div>   
+
+
+<div class ="split right">
+<div class="row1 w3-topbar w3-bottombar w3-border-black">
+  <div class="column1 w3-leftbar w3-rightbar w3-border-black" style="background-color:Yellow"  onclick = "zoneClick();">
+    <h2>Yellow Zone</h2>
+  </div>
+  <div class="column1 w3-rightbar w3-border-black " style="background-color: LawnGreen">
+    <h2>Node 11</h2>
+    <form method='post'  >
+         <div style="display:none;"><input type='text' name='node' value="1"></div><br>
+         <input type="submit" name="action">
+    </form>
+  </div>
+  <div class="column1 w3-rightbar w3-border-black" style="background-color:LawnGreen">
+    <h2>Node 12</h2>
+    <form method='post'  >
+        <div style="display:none;"><input type='text' name='node' value="2"></div><br>
+        <input type="submit" display="none" name="action" >
+    </form>
+  </div>
+  <div class="column1 w3-rightbar w3-border-black" style="background-color:LawnGreen">
+    <h2>Node 13</h2>
+    <form method='post'  >
+        <div style="display:none;"><input type='text' name='node' value="3"></div><br>
+        <input type="submit" display="none" name="action" >
+    </form>
+  
+  </div>
+</div>
+
+<div class="row2 w3-bottombar w3-border-black">
+  <div class="column2 w3-leftbar w3-rightbar w3-border-black" style="background-color:Red">
+    <h2 style="text-aling: center;">Red Zone</h2>
+  </div>
+  <div class="column2 w3-rightbar w3-border-black " style="background-color:LawnGreen" >
+    <h2>Node 21</h2>
+    <form method='post'  >
+        <div style="display:none;"><input type='text' name='node' value="4"></div><br>
+        <input type="submit" display="none" name="action" >
+    </form>
+  </div>
+  <div class="column2 w3-rightbar w3-border-black " style="background-color:LawnGreen">
+    <h2>Node 22</h2>
+    <form method='post'  >
+        <div style="display:none;"><input type='text' name='node' value="5"></div><br>
+        <input type="submit" display="none" name="action" >
+    </form>
+  </div>
+  <div class="column2 w3-rightbar w3-border-black " style="background-color:LawnGreen">
+    <h2>Node 23</h2>
+    <form method='post'  >
+        <div style="display:none;"><input type='text' name='node' value="6"></div><br>
+        <input type="submit" display="none" name="action" >
+    </form>
+  </div>
+</div>
+
+<div class="row3 w3-bottombar w3-border-black">
+  <div class="column3 w3-leftbar w3-rightbar w3-border-black" style="background-color:Yellow">
+    <h2>Yellow Zone</h2>
+  </div>
+  <div class="column3 w3-rightbar w3-border-black " style="background-color:LawnGreen">
+    <h2>Node 31</h2>
+    <form method='post'  >
+        <div style="display:none;"><input type='text' name='node' value="7"></div><br>
+        <input type="submit" display="none" name="action" >
+    </form>
+  </div>
+  <div class="column3 w3-rightbar w3-border-black " style="background-color:LawnGreen">
+    <h2>Node 32</h2>
+    <form method='post'  >
+        <div style="display:none;"><input type='text' name='node' value="8"></div><br>
+        <input type="submit" display="none" name="action" >
+    </form>
+  </div>
+  <div class="column3 w3-rightbar w3-border-black " style="background-color:LawnGreen">
+    <h2>Node 32</h2>
+    <form method='post'  >
+        <div style="display:none;"><input type='text' name='node' value="9"></div><br>
+        <input type="submit" display="none" name="action" style="cursor:pointer;">
+    </form>
+  </div>
+</div>
+</div>
+
+
+<script >
+  
+  var bot1= {{ bot1 }};
+  var bot2 = {{ bot2 }};
+  var bot3 = {{ bot3 }};
+  var bot4 = {{ bot4 }};
+  var bot5 = {{ bot5 }};
+  var bot6 = {{ bot6 }};
+  var bot7 = {{ bot7 }};
+  var bot8 = {{ bot8 }};
+  var bot9 = {{ bot9 }};
+  
+  
+</script>
+  
+  
+
+</body>
+</html>
