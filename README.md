@@ -64,24 +64,24 @@ cutting area which will ensure cutting of crop which comes in between them.<br>
 
 
 ## Electronic Aspects of the Bot
-### Sensors Used
-#### ULTRASONIC SENSOR: 
+### Sensors Used:
+#### ULTRASONIC SENSOR
 8 such sensors are used.<br>
 
-#### SOIL MOISTURE SENSOR:
+#### SOIL MOISTURE SENSOR
 1 moisture sensor is used to take data inputs from the cultivated land.
-#### TEMPERATURE SENSOR: 
+#### TEMPERATURE SENSOR
 1 temperature sensor is used to get the temperature data from the field.
-#### ROTARY ENCODER: 
+#### ROTARY ENCODER 
 3 rotary encoders is used to keep track of the lead screws during their operation. The DC motors used for the traversing of the bot has inbuilt encoders.
-#### MPU 9250: 
+#### MPU 9250
 1 such sensor is used. It contains gyroscope, accelerometer and magnetometer. It is used to maintain the orientation of the bot.
-#### BUMP SENSOR: 
+#### BUMP SENSOR
 4 bump sensors are used to determine the state of the bot in certain manoeuvres.
-#### HALL SENSOR: 
+#### HALL SENSOR 
 Hall sensor is used to measure the distance travelled by the bot. Encoder cannot be used on the ground wheels as the wheel can slip on the ground which will result in wrong measurements.
 
-### Micro-Controller
+### Micro-Controller:
 The microcontroller of the bot is the brain of the bot. Each and every function and maneuverer of the bot is
 controlled by a microcontroller. It also helps the bot take decisions and decides the further course of
 action. We have used Arduino Mega microcontroller board which depends on AT Mega microcontroller.
@@ -94,16 +94,38 @@ This board can be protected from the unexpected electrical discharge by placing 
 ![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Micro%20Controller.PNG "Sample Micro-Controller Image")
 
 
-## Motor Driver
+### Motor Driver:
 We have used the Cytron MDD10A which is a dual-channel version of the MDD10C. Like MD10C, MDD10A
 also supports locked-antiphase and sign-magnitude PWM signal. 
 
-### The Implication of PID
+### The Implication of PID:
 PID is short for proportional, integral and derivative.
 The PID is used to correct the error of the bot while traversing.
 
 The correction value is given as<br>
 **Correction = kp(error) + kd(error- previous_error)**
+
+### Traversing:
+* Traversing occurs with the help of ultrasonic sensors. Which is used to maintain a constant distance from the wall.
+* After starting, the bot will stop successively after a fixed distance and take readings of various sensors and water the zone accordingly.
+* Ploughing will occur automatically as the bot moves.<br>
+* After detecting the end of the arena, the bot will take a 180 degree turn in the clockwise direction and move back to the respective starting zone.
+* After detecting red or yellow region, bot will do the required action i.e. climbing up or down the steps.
+
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Traversing%20(electronics%20explained).PNG "Traversing (Electronics Explained)")
+
+
+### Step Up Manoeuvre:
+* For climbing mechanism, 3 lead screws are actuated using 3 DC motors, which lift the whole body in 3 steps.
+* In the first step, the whole body will be lifted by actuating the lead screws of middle and rear wheel assemblies. Then the bot will move forward until the front wheels rest above the step. A bump sensor will detect that the front wheels have touched the ground. The front colour sensor will detect the change in the zone for the prior part of the bot (yellow to red).
+* In the second step, the Middle Wheels will be pulled back up and the bot will move forward to rest on the stair on front and middle wheels.
+* In the last step, the back wheels will be pulled up and the bot would have climbed up.
+* The step-down manoeuvre is the opposite of the step up manoeuvre.
+* The bot also has an ability to lift itself above the crop for traversing in the field.
+
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Step%20Up%20Maneouvre.PNG "Step Up Manoeuvre")
+
+
 ## Working of the IoT (Web Page)
 The readings from the different types of sensors (moisture, humidity, temperature etc) will be taken
 by a microcontroller and transferred wirelessly to a database. The readings will be stored in the database
@@ -134,16 +156,7 @@ Note: The arrangement of the files inside the folder should be same as shown in 
 <img src="Images and Videos/Images/web_page.jpg">
 
 
-## Traversing
-<p> • Traversing occurs with the help of ultrasonic sensors. Which is used to maintain a constant distance
-from the wall.<br>
-• After starting, the bot will stop successively after a fixed distance and take readings of various
-sensors and water the zone accordingly.<br>
-• Ploughing will occur automatically as the bot moves.<br>
-• After detecting the end of the arena, the bot will take a 180 degree turn in the clockwise direction and
-move back to the respective starting zone.<br>
-• After detecting red or yellow region, bot will do the required action i.e. climbing up or down the
-steps.<br></p>
+
 
 ## Step Up Manoeuvre
 • For climbing mechanism, 3 lead screws are actuated using 3 DC motors, which lift the whole body in
