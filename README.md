@@ -1,76 +1,63 @@
 # DIC_Terrace_Farming
-Inter IIT Tech Meet 2019
+## Inter IIT Tech Meet 2019
 
-# Images
-<img src= "Images and Videos/Images/4.JPG">
-
-
-# Abstract
+### Abstract:
 MaRS IIT Roorkee has developed an autonomous bot to perform agricultural tasks for terrace farming. This
 bot can perform functionalities like seeding, watering, ploughing and harvesting of the crops. It is itself
 unique in a way that the bot can climb up and down the manmade steps in the terrace farming.
 
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Team%20Photo.jpg "Team MaRS @Inter IIT Tech-meet 8.0")
 
-**The challenges faced in terrace farming are:**
-1) Narrow terraces make it difficult for the farmers to navigate. These also prevent the use of heavy
-machinery or animal power thus the farmers have to rely on locally made agricultural tools which are
-appropriate to narrow terraces. The use of improper tools and methods lead to poor yields.
-2) Improper irrigation methods and shortage of watering systems hamper the growth of the crops.
-3) Wider terraces demand the use of draft animals as a source of farm power. Sometimes farmers are
-compelled to use manual labour even for ploughing.
-4) Steeper slopes make it difficult for the farmers to mobilise the farming tools. It drastically increases
-the labour demand and hence increasing the cost of production.
-# Mechanical Aspect of the Design
+To view more images, click [here.](https://github.com/visvash/DIC_Terrace_Farming/tree/master/Images%20and%20Videos/Images "DIC_Terrace_Farming_Robot")
 
-## Traversal
-• The bot uses 4-wheel differential drive to traverse on the soil
-surface. Two central idler wheels are provided for extra stability
-while climbing the steps and traversing on uneven surfaces.<br>
-• For this drive we are using Mega Torque Planetary DC geared motor
-of 300RPM and torque capacity of 92kg-cm, enough to carry out
-tasks like Ploughing and Seeding. The chassis of bot is made up of
-square steel pipes, arc welded together for rigidity.
+
+
+### Challenges faced in Terrace Farming:
+* Narrow terraces make it difficult for the farmers to navigate. These also prevent the use of heavy machinery or animal power thus the farmers have to rely on locally made agricultural tools which are appropriate to narrow terraces. The use of improper tools and methods lead to poor yields.
+* Improper irrigation methods and shortage of watering systems hamper the growth of the crops.
+* Wider terraces demand the use of draft animals as a source of farm power. Sometimes farmers are compelled to use manual labour even for ploughing.
+* Steeper slopes make it difficult for the farmers to mobilise the farming tools. It drastically increases the labour demand and hence increasing the cost of production.
+
+## Mechanical Aspects of the Design
+
+### Traversal
+* The bot uses 4-wheel differential drive to traverse on the soil surface. Two central idler wheels are provided for extra stability while climbing the steps and traversing on uneven surfaces.
+* For this drive we are using Mega Torque Planetary DC geared motor of 300RPM and torque capacity of 92kg-cm, enough to carry out tasks like Ploughing and Seeding. The chassis of bot is made up of square steel pipes, arc welded together for rigidity.
 
 ## Climbing
-• We divided bot into 3-wheel assemblies in which front and back are containing 2 wheels, 2 motors
-and a lead screw but the middle assembly contains 4 caster wheels and a lead screw so that the bot
-does not topple, while one of the front or back wheel assemblies is in the air.<br>
+* We divided bot into 3-wheel assemblies in which front and back are containing 2 wheels, 2 motors and a lead screw but the middle assembly contains 4 caster wheels and a lead screw so that the bot does not topple, while one of the front or back wheel assemblies is in the air.
+* In the first step, the whole body will be lifted by actuating the lead screws of middle and rear wheel assemblies. Then the bot will move forward until the front wheels rest above the step.
+* In the second step, the Middle Caster Wheels will be pulled back up and the bot will move forward by actuating the back wheels to rest on the stair on front and middle wheels.
+* In the last step, the back wheels will be pulled up, this time the front wheels will be actuating and it will move the bot forward and the bot would have climbed up.
+* The bot also has an ability to lift itself above the crop for traversing in the field.
 
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Downstair%20Motion%20Process.jpeg "Climbing Process")
 
 ## Ploughing
-• A special concave disk having an angle of
-curvature of around 15-25 degrees has
-been used. This angle determines the
-ploughing depth. More the angle more is
-the depth of plough and more is the power
-to drive the operation.<br>
+* The thickness of Topsoil for cultivation in terraces is less in comparison to that of plains and we can encounter stones while deep ploughing.
+* Using a Disc Harrow mechanism for shallow ploughing would be more appropriate and will save the Tool from wear and tear. Simultaneously it will use less Power per unit area.
+* A special concave disk having an angle of curvature of around 15-25 degrees has been used. This angle determines the ploughing depth. More the angle more is the depth of plough and more is the power to drive the operation.
+* The discs also maintain an angle of 40-45 degrees with the direction of travel which helps it in rotation and opening of the soil by scooping it out simultaneously.
 
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Mechanical%20Design/Images/PLOUGH/Plough%20Prototype.PNG "Plough")
 
 ## Watering
-• The bot will have a solenoid-valve for electronically controlling the water given to the crops. The
-concept of the watering mechanism is designed so as to minimize the water consumption along with
-maintaining the net yield.
+* The bot will have a solenoid-valve for electronically controlling the water given to the crops. 
+* The concept of the watering mechanism is designed so as to minimize the water consumption along with maintaining the net yield.
 
 ## Seeding
-• For dropping the seeds, a seed tank is attached on the bot that
-directs the seeds to the outlet pipes using 3D printed discs
-controlled by Johnson type DC motor. The tank contains 3
-circular disc-like structures with grooves in them. These discs
-are rotated by the motor.<br>
-• The tank is divided into two-compartments, one compartment
-contains the seed and the other compartment contains the
-outlet. When the motor rotates the disc, the seeds are trapped
-in the grooves and are transferred to the next compartment.
-The seeds then fall to the ground through the outlet.<br>
-• Cultivator is mounted at the bottom along with outlet pipes at
-their back so they easily drop off seeds in the tillage so
-formed.
+* For dropping the seeds, a seed tank is attached on the bot that directs the seeds to the outlet pipes using 3D printed discs controlled by Johnson type DC motor. The tank contains 3 circular disc-like structures with grooves in them. These discs are rotated by the motor.
+* The tank is divided into two-compartments, one compartment contains the seed and the other compartment contains the outlet. When the motor rotates the disc, the seeds are trapped in the grooves and are transferred to the next compartment. The seeds then fall to the ground through the outlet.
+* Cultivator is mounted at the bottom along with outlet pipes at their back so they easily drop off seeds in the tillage so formed.
 
 ## Harvesting
 • Harvester consists of 2 cutting blade, operated by a geared DC motor using Spur Gears.<br>
 • Both the blades will rotate with the same speed but in opposite direction, the blades share a common
 cutting area which will ensure cutting of crop which comes in between them.<br>
 • The harvester can be detached and can be mounted on bot when required.
+
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Mechanical%20Design/Images/HARVESTOR/Harvester%201.jpg "Harvester")
+
 
 # Electronics aspect of the bot
 ## Sensors Used
