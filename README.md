@@ -1,14 +1,16 @@
 # DIC_Terrace_Farming
 ## Inter IIT Tech Meet 2019
 
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Team%20Photo.jpg "Team MaRS @Inter IIT Tech-meet 8.0")
+
 ### Abstract:
 MaRS IIT Roorkee has developed an autonomous bot to perform agricultural tasks for terrace farming. This
 bot can perform functionalities like seeding, watering, ploughing and harvesting of the crops. It is itself
 unique in a way that the bot can climb up and down the manmade steps in the terrace farming.
 
-![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Team%20Photo.jpg "Team MaRS @Inter IIT Tech-meet 8.0")
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Final%20Bot%20View%201.jpg "Terrace Farming Robot")
 
-To view more images, click [here.](https://github.com/visvash/DIC_Terrace_Farming/tree/master/Images%20and%20Videos/Images "DIC_Terrace_Farming_Robot")
+To view more images of the final bot, click [here.](https://github.com/visvash/DIC_Terrace_Farming/tree/master/Images%20and%20Videos/Images "DIC_Terrace_Farming_Robot")
 
 
 
