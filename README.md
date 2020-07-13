@@ -1,7 +1,10 @@
 # DIC_Terrace_Farming
 ## Inter IIT Tech Meet 2019
 
-![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Team%20Photo.jpg "Team MaRS @Inter IIT Tech-meet 8.0")
+<p align="center">
+  <img src="https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Team%20Photo.jpg">
+  Team MaRS @Inter IIT Technical Meet 8.0
+</p>
 
 ### Abstract:
 MaRS IIT Roorkee has developed an autonomous bot to perform agricultural tasks for terrace farming. This
@@ -64,24 +67,24 @@ cutting area which will ensure cutting of crop which comes in between them.<br>
 
 
 ## Electronic Aspects of the Bot
-### Sensors Used
-#### ULTRASONIC SENSOR: 
+### Sensors Used:
+#### ULTRASONIC SENSOR
 8 such sensors are used.<br>
 
-#### SOIL MOISTURE SENSOR:
+#### SOIL MOISTURE SENSOR
 1 moisture sensor is used to take data inputs from the cultivated land.
-#### TEMPERATURE SENSOR: 
+#### TEMPERATURE SENSOR
 1 temperature sensor is used to get the temperature data from the field.
-#### ROTARY ENCODER: 
+#### ROTARY ENCODER 
 3 rotary encoders is used to keep track of the lead screws during their operation. The DC motors used for the traversing of the bot has inbuilt encoders.
-#### MPU 9250: 
+#### MPU 9250
 1 such sensor is used. It contains gyroscope, accelerometer and magnetometer. It is used to maintain the orientation of the bot.
-#### BUMP SENSOR: 
+#### BUMP SENSOR
 4 bump sensors are used to determine the state of the bot in certain manoeuvres.
-#### HALL SENSOR: 
+#### HALL SENSOR 
 Hall sensor is used to measure the distance travelled by the bot. Encoder cannot be used on the ground wheels as the wheel can slip on the ground which will result in wrong measurements.
 
-### Micro-Controller
+### Micro-Controller:
 The microcontroller of the bot is the brain of the bot. Each and every function and maneuverer of the bot is
 controlled by a microcontroller. It also helps the bot take decisions and decides the further course of
 action. We have used Arduino Mega microcontroller board which depends on AT Mega microcontroller.
@@ -94,16 +97,38 @@ This board can be protected from the unexpected electrical discharge by placing 
 ![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Micro%20Controller.PNG "Sample Micro-Controller Image")
 
 
-## Motor Driver
+### Motor Driver:
 We have used the Cytron MDD10A which is a dual-channel version of the MDD10C. Like MD10C, MDD10A
 also supports locked-antiphase and sign-magnitude PWM signal. 
 
-### The Implication of PID
+### The Implication of PID:
 PID is short for proportional, integral and derivative.
 The PID is used to correct the error of the bot while traversing.
 
 The correction value is given as<br>
 **Correction = kp(error) + kd(error- previous_error)**
+
+### Traversing:
+* Traversing occurs with the help of ultrasonic sensors. Which is used to maintain a constant distance from the wall.
+* After starting, the bot will stop successively after a fixed distance and take readings of various sensors and water the zone accordingly.
+* Ploughing will occur automatically as the bot moves.<br>
+* After detecting the end of the arena, the bot will take a 180 degree turn in the clockwise direction and move back to the respective starting zone.
+* After detecting red or yellow region, bot will do the required action i.e. climbing up or down the steps.
+
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Traversing%20(electronics%20explained).PNG "Traversing (Electronics Explained)")
+
+
+### Step Up Manoeuvre:
+* For climbing mechanism, 3 lead screws are actuated using 3 DC motors, which lift the whole body in 3 steps.
+* In the first step, the whole body will be lifted by actuating the lead screws of middle and rear wheel assemblies. Then the bot will move forward until the front wheels rest above the step. A bump sensor will detect that the front wheels have touched the ground. The front colour sensor will detect the change in the zone for the prior part of the bot (yellow to red).
+* In the second step, the Middle Wheels will be pulled back up and the bot will move forward to rest on the stair on front and middle wheels.
+* In the last step, the back wheels will be pulled up and the bot would have climbed up.
+* The step-down manoeuvre is the opposite of the step up manoeuvre.
+* The bot also has an ability to lift itself above the crop for traversing in the field.
+
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Step%20Up%20Maneouvre.PNG "Step Up Manoeuvre")
+
+
 ## Working of the IoT (Web Page)
 The readings from the different types of sensors (moisture, humidity, temperature etc) will be taken
 by a microcontroller and transferred wirelessly to a database. The readings will be stored in the database
@@ -119,46 +144,21 @@ After the data is stored in the database in a sorted manner, we will need to ren
 page which will display the data to the user. 
 <br><br>
 
-### Steps and Sequence of execution :-
-1) Firstly, ensure proper connection of sensors with the Esp8266.
-2) Go to the folder named **IoT codes** present inside the **src** folder.
-3) Navigate inside to the **Esp8266 code** folder and Upload the file named **integrated.ino** in the Esp266.
-4) Upon running the code in Esp8266, it will generate an URL which needs to copied and pasted in the file named **PYTHON_READER.py**(generally the url remains same if the wifi connection of the Esp is not changed).
-5) Run the file named **PYTHON_READER.py** in the ubuntu terminal. (Upon execution, the data from sensors transmitted by Esp8266 will be read and written as a local text file)
-6) Finally run the **main.py** in the ubuntu terminal. It will generate an URL.
-7) Copy paste the URL in the browser to get to the web page.
+### Steps and Sequence of execution:
+* Firstly, ensure proper connection of sensors with the Esp8266.
+* Go to the folder named **IoT codes** present inside the **src** folder.
+* Navigate inside to the **Esp8266 code** folder and Upload the file named **integrated.ino** in the Esp266.
+* Upon running the code in Esp8266, it will generate an URL which needs to copied and pasted in the file named **PYTHON_READER.py**(generally the url remains same if the wifi connection of the Esp is not changed).
+* Run the file named **PYTHON_READER.py** in the ubuntu terminal. (Upon execution, the data from sensors transmitted by Esp8266 will be read and written as a local text file)
+* Finally run the **main.py** in the ubuntu terminal. It will generate an URL.
+* Copy paste the URL in the browser to get to the web page.
 
-Note: The arrangement of the files inside the folder should be same as shown in the folder "IoT codes".<br><br>
+*Note: The arrangement of the files inside the folder should be same as shown in the folder "IoT codes".<br><br>
 
-### Web-Page
-<img src="Images and Videos/Images/web_page.jpg">
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/web_page.jpg "Web Page")
 
 
-## Traversing
-<p> • Traversing occurs with the help of ultrasonic sensors. Which is used to maintain a constant distance
-from the wall.<br>
-• After starting, the bot will stop successively after a fixed distance and take readings of various
-sensors and water the zone accordingly.<br>
-• Ploughing will occur automatically as the bot moves.<br>
-• After detecting the end of the arena, the bot will take a 180 degree turn in the clockwise direction and
-move back to the respective starting zone.<br>
-• After detecting red or yellow region, bot will do the required action i.e. climbing up or down the
-steps.<br></p>
-
-## Step Up Manoeuvre
-• For climbing mechanism, 3 lead screws are actuated using 3 DC motors, which lift the whole body in
-3 steps.<br>
-• In the first step, the whole body will be lifted by actuating the lead screws of middle and rear wheel
-assemblies. Then the bot will move forward until the front wheels rest above the step. A bump sensor
-will detect that the front wheels have touched the ground. The front colour sensor will detect the change
-  in the zone for the prior part of the bot (yellow to red).<br>
-• In the second step, the Middle Wheels will be pulled back up and the bot will move forward to rest on
-  the stair on front and middle wheels.<br>
-• In the last step, the back wheels will be pulled up and the bot would have climbed up.<br>
-• The step-down manoeuvre is the opposite of the step up manoeuvre.<br>
-• The bot also has an ability to lift itself above the crop for traversing in the field.<br>
-
-## Cost Structure
+## Cost Structure:
 
  |Component       | Number used  | Cost INR|
  |---|----|---|
@@ -191,7 +191,10 @@ water and sunlight. Weeds intensify the pest and
 disease problem by serving as alternate host.<br>
 They also reduce the efficiency of harvesting
 and hence resulting in land value reduction.
-<br>
+
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Weed%20Detection.PNG "Weed Detection Image")
+
+
 A **high-resolution camera** is mounted on the bot to capture live feed video. The detection tool uses
 machine learning procedure based on support vector machines and blob analysis for effective
 classification of weed.<br>
@@ -209,9 +212,9 @@ bot operates on 12V Li-ion battery which can be charged using solar power.
 
 
 
-## Team Members
+#### Team Members
 [Annushree](https://github.com/annushree21)<br>
-[Avdesh Kumar Ranwa]()<br>
+[Avdesh Kumar Ranwa](https://www.linkedin.com/in/avdesh-kumar-ranwa-a43610187/)<br>
 [Debaditya Barman](https://github.com/ItZ-Debaditya)<br>
 [Dhruv Shehgal]( https://github.com/Dhruv1064)<br>
 [Naveen Chandra Rai](https://github.com/ncr38)<br>
@@ -221,6 +224,12 @@ bot operates on 12V Li-ion battery which can be charged using solar power.
 [Tabish Madni](https://github.com/Tmadni)<br>
 [Visvash Attri](https://github.com/visvash)<br>
 
-## Mentors
+#### Mentors
 [Anant Shandalya](github.com/Anant-Shandilya)<br>
 [Shubhanshu Aggrawal](https://github.com/Shubhanshu07)
+
+<p align="center">
+  <img src="https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Champions.jpg">
+  Inter IIT Tech-Meet Champions
+</p>
+
