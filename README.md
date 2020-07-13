@@ -1,4 +1,4 @@
-# DIC_Terrace_Farming_Robot
+# DIC_Terrace_Farming
 ## Inter IIT Tech Meet 2019
 
 <p align="center">
