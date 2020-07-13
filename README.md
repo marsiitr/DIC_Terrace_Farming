@@ -152,7 +152,7 @@ page which will display the data to the user.
 
 *Note: The arrangement of the files inside the folder should be same as shown in the folder "IoT codes".<br><br>
 
-![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Micro%20Controller.PNG "Sample Micro-Controller Image")
+![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/web_page.jpg "Web Page")
 
 
 ## Cost Structure:
@@ -224,3 +224,5 @@ bot operates on 12V Li-ion battery which can be charged using solar power.
 ## Mentors
 [Anant Shandalya](github.com/Anant-Shandilya)<br>
 [Shubhanshu Aggrawal](https://github.com/Shubhanshu07)
+
+
