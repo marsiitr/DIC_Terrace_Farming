@@ -1,7 +1,10 @@
 # DIC_Terrace_Farming
 ## Inter IIT Tech Meet 2019
 
-![alt text](https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Team%20Photo.jpg "Team MaRS @Inter IIT Tech-meet 8.0")
+<p align="center">
+  <img src="https://github.com/visvash/DIC_Terrace_Farming/blob/master/Images%20and%20Videos/Images/Team%20Photo.jpg">
+  Team MaRS @Inter IIT Technical Meet 8.0
+</p>
 
 ### Abstract:
 MaRS IIT Roorkee has developed an autonomous bot to perform agricultural tasks for terrace farming. This
@@ -209,7 +212,7 @@ bot operates on 12V Li-ion battery which can be charged using solar power.
 
 
 
-## Team Members
+#### Team Members
 [Annushree](https://github.com/annushree21)<br>
 [Avdesh Kumar Ranwa](https://www.linkedin.com/in/avdesh-kumar-ranwa-a43610187/)<br>
 [Debaditya Barman](https://github.com/ItZ-Debaditya)<br>
@@ -221,7 +224,7 @@ bot operates on 12V Li-ion battery which can be charged using solar power.
 [Tabish Madni](https://github.com/Tmadni)<br>
 [Visvash Attri](https://github.com/visvash)<br>
 
-## Mentors
+#### Mentors
 [Anant Shandalya](github.com/Anant-Shandilya)<br>
 [Shubhanshu Aggrawal](https://github.com/Shubhanshu07)
 
