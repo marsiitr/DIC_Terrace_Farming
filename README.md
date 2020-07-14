@@ -215,7 +215,7 @@ bot operates on 12V Li-ion battery which can be charged using solar power.</p>
 10. [Visvash Attri](https://github.com/visvash)<br>
 
 #### Mentors
-1. [Anant Shandalya](https://www.github.com/Anant-Shandilya)<br>
+1. [Anant Shandilya](https://www.github.com/Anant-Shandilya)<br>
 2. [Shubhanshu Agarwal](https://github.com/Shubhanshu07)
 
 <p align="center">
